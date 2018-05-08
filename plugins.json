@@ -1,0 +1,7 @@
+{
+    "raow\/mautic-rss-to-email-bundle": "1.1.0.0",
+    "kuzmany\/mautic-custom-tags-bundle": "1.0.0.0",
+    "thedmsgroup\/mautic-contact-client-bundle": "2.12.5.0",
+    "thedmsgroup\/mautic-contact-source-bundle": "2.12.4.0",
+    "thedmsgroup\/mautic-enhancer-bundle": "2.12.3.0"
+}

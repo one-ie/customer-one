@@ -1,4 +1,5 @@
 .*
+.php_cs*
 !.gitignore
 !.htaccess
 !.gitkeep
@@ -57,7 +58,7 @@
 !/media/images/mautic_logo*
 !/media/images/.htaccess
 
-/plugins/*
+!/plugins/*
 !/plugins/MauticCitrixBundle
 !/plugins/MauticClearbitBundle
 !/plugins/MauticCloudStorageBundle
@@ -72,7 +73,7 @@
 !/plugins/MauticZapierBundle
 !/plugins/index.html
 
-/themes/*
+!/themes/*
 !/themes/aurora
 !/themes/blank
 !/themes/cards
