@@ -173,6 +173,10 @@ class VtigerIntegration extends CrmAbstractIntegration
      */
     public function getAvailableLeadFields($settings = [])
     {
+        if ($fields = parent::getAvailableLeadFields()) {
+            return $fields;
+        }
+
         $vTigerFields      = [];
         $silenceExceptions = (isset($settings['silence_exceptions'])) ? $settings['silence_exceptions'] : true;
 

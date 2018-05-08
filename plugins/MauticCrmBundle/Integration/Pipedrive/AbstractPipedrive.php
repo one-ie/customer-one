@@ -38,32 +38,8 @@ abstract class AbstractPipedrive
         $this->em = $em;
     }
 
-    /**
-     * @param array $data
-     * @param array $objectFields
-     *
-     * @return array
-     */
-    protected function convertPipedriveData(array $data = [], array $objectFields = [])
+    protected function convertPipedriveData(array $data = [])
     {
-        // Convert multiselect data
-        // Pipedrive webhook return IDs not labels, but  Mautic to Pipedrive sync labels
-        if (!empty($objectFields)) {
-            foreach ($objectFields as $field) {
-                if ($field['field_type'] == 'set' && in_array($field['key'], array_keys($data))) {
-                    $pipedriveContactFieldOptions = array_flip(explode(',', $data[$field['key']]));
-                    $pipedriveAllFieldOptions     = array_combine(array_values(array_column($field['options'], 'id')),
-                        array_column($field['options'], 'label'));
-                    foreach ($pipedriveAllFieldOptions as $key => $option) {
-                        if (!isset($pipedriveContactFieldOptions[$key])) {
-                            unset($pipedriveAllFieldOptions[$key]);
-                        }
-                    }
-                    $data[$field['key']] = $pipedriveAllFieldOptions;
-                }
-            }
-        }
-
         if (isset($data['email'])) {
             $data['email'] = $data['email'][0]['value'];
         }

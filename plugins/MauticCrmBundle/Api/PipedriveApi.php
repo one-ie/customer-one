@@ -162,10 +162,6 @@ class PipedriveApi extends CrmApi
      */
     private function getRequestParameters(array $data = [])
     {
-        foreach ($data as $k => $d) {
-            $data[$k] = str_replace('|', ',', $d);
-        }
-
         return [
             'form_params' => $data,
             'query'       => $this->getAuthQuery(),
