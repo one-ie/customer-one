@@ -48,13 +48,13 @@ $mautic_hover       = '#3d497b';
 										<div class="form-group">
 											<label for="mautic-path">Where is Mautic installed?</label><br/>
 											<small>Absolute path to Mautic's root on your server.</small>
-											<input type="text" class="form-control" id="mautic-path" value="<?=realpath(__DIR__.'/..'); ?>">
+											<input type="text" class="form-control" id="mautic-path" value="/Users/tony/Sites/customer-one/" placeholder="/Users/tony/Sites/customer-one/">
 											<small class="path-success">Compatible Mautic installation found (version <span class="version"></span>).</small>
 											<small class="path-fail">Mautic installation not found here.</small>
 										</div>
 										<div class="form-group">
 											<label for="mautic-url">Mautic Root URL</label><br/>
-											<input type="text" class="form-control" id="mautic-url" placeholder="">
+											<input type="text" class="form-control" id="mautic-url" placeholder="http">
 											<small class="url-success">OK, found Mautic here.</small>
 											<small class="url-fail">Mautic installation not found at this URL.</small>
 										</div>
@@ -114,7 +114,7 @@ $mautic_hover       = '#3d497b';
 														<input type="number" class="form-control margintop" id="sidebar-margin-top" name="sidebar_margin_top" data-margin="marginTop" data-logo="sidebar" placeholder="0" value="10">
 														<div class="input-group-addon">px</div>
 													</div>
-												</div>		
+												</div>
 											</div>
 										</div>
 										<div class="row">
@@ -125,7 +125,7 @@ $mautic_hover       = '#3d497b';
 														<input type="number" class="form-control marginright" id="sidebar-margin-right" name="sidebar_margin_right" data-margin="marginRight" data-logo="sidebar" value="0" placeholder="0">
 														<div class="input-group-addon">px</div>
 													</div>
-												</div>						
+												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
@@ -134,7 +134,7 @@ $mautic_hover       = '#3d497b';
 														<input type="number" class="form-control marginleft" id="sidebar-margin-left" name="sidebar_margin_left" data-margin="marginLeft" data-logo="sidebar" value="0" placeholder="0">
 														<div class="input-group-addon">px</div>
 													</div>
-												</div>						
+												</div>
 											</div>
 										</div><!--row-->
 									</div><!--sidebarlogo-->
@@ -165,7 +165,7 @@ $mautic_hover       = '#3d497b';
 														<input type="number" class="form-control margintop" id="login-margin-top" name="login_margin_top" data-margin="marginTop" data-logo="login" placeholder="0" value="20">
 														<div class="input-group-addon">px</div>
 													</div>
-												</div>		
+												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
@@ -174,7 +174,7 @@ $mautic_hover       = '#3d497b';
 														<input type="number" class="form-control marginbottom" id="login-margin-bottom" name="login_margin_bottom" data-margin="marginBottom" data-logo="login" placeholder="0" value="20">
 														<div class="input-group-addon">px</div>
 													</div>
-												</div>						
+												</div>
 											</div>
 										</div>
 									</div><!--loginlogo-->

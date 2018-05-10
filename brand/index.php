@@ -26,7 +26,7 @@ if (isset($_GET['q'])) {
                 }
                 echo $whitelabeler->templateVersions($version);
             } else {
-                echo 0;
+                echo '2.1';
             }
             exit();
         }
