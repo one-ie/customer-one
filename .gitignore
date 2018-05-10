@@ -1,4 +1,6 @@
 .*
+error_log
+php.ini
 .php_cs*
 !.gitignore
 !.htaccess
