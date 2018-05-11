@@ -148,10 +148,7 @@ $extraMenu = $view['menu']->render('extra');
 
 
 
-<!-- Calendar -->
-        <li class="nav-group">
-        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/calendar"><span class="icon pull-left fa fa-calendar"></span><span class="nav-item-name text pull-left">Calendar</span></a>
-        </li>
+
 
         <!-- Points -->
 
@@ -172,6 +169,11 @@ $extraMenu = $view['menu']->render('extra');
                 </ul>
                 </li>
 
+                <!-- Calendar -->
+                        <li class="nav-group">
+                        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/calendar"><span class="icon pull-left fa fa-calendar"></span><span class="nav-item-name text pull-left">Calendar</span></a>
+                        </li>
+                        
 <!-- Insight -->
         <li class="last nav-group">
         <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/reports"><span class="icon pull-left fa fa-line-chart"></span><span class="nav-item-name text pull-left">Insight</span></a>
