@@ -81,18 +81,42 @@ $extraMenu = $view['menu']->render('extra');
         <span class="arrow pull-right text-right"></span>
         <span class="icon pull-left fa fa-user"></span><span class="nav-item-name text pull-left">People</span></a>
         <ul class="nav-submenu" id="mautic_channels_root_child">
-        <li class="first nav-group">
-        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/users/edit"><span class="nav-item-name text">Staff</span></a>
-        </li>
-        <li class="nav-group">
-        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/contacts"><span class="nav-item-name text">Contacts</span></a>
-        </li>
+          <li class="first nav-group">
+          <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/contacts"><span class="nav-item-name text">Contacts</span></a>
+          </li>
         <li class="nav-group">
         <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/companies"><span class="nav-item-name text">Companies</span></a>
+        </li>
+        <li class=" nav-group">
+        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/users/edit"><span class="nav-item-name text">Staff</span></a>
         </li>
 
         </ul>
         </li>
+
+        <!-- Targeting -->
+
+                <li class="nav-group open">
+                <a href="javascript:void(0);" data-target="#mautic_campaigns_root_child" data-toggle="submenu" data-parent=".nav" data-menu-link="mautic_campaigns_root" id="mautic_campaigns_root">
+                <span class="arrow pull-right text-right"></span>
+                <span class="icon pull-left fa fa-calculator"></span><span class="nav-item-name text pull-left">Targeting</span></a>
+                <ul class="nav-submenu open" id="mautic_campaigns_root_child">
+                  <li class="nav-group">
+                  <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/segments"><span class="nav-item-name text">Segments</span></a>
+                  </li>
+                  <li class="nav-group">
+                  <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/stages"><span class="nav-item-name text">Stages</span></a>
+                  </li>
+
+                <li class="first nav-group">
+                <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/forms"><span class="nav-item-name text">Forms</span></a>
+                </li>
+                <li class="last nav-group">
+                <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/campaigns"><span class="nav-item-name text">Campaigns</span></a>
+                </li>
+
+                </ul>
+                </li>
 
 <!-- Communication -->
 
@@ -105,13 +129,13 @@ $extraMenu = $view['menu']->render('extra');
         <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/messages"><span class="nav-item-name text">Messages</span></a>
         </li>
         <li class="nav-group">
-        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/emails"><span class="nav-item-name text">Emails</span></a>
+        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/emails"><span class="nav-item-name text">Email</span></a>
         </li>
         <li class="nav-group">
         <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/focus"><span class="nav-item-name text">Web</span></a>
         </li>
         <li class="nav-group">
-        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/notifications"><span class="nav-item-name text">Notifications</span></a>
+        <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/notifications"><span class="nav-item-name text">Web Notifications</span></a>
         </li>
         <li class="nav-group">
         <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/sms"><span class="nav-item-name text">SMS</span></a>
@@ -122,28 +146,7 @@ $extraMenu = $view['menu']->render('extra');
         </ul>
         </li>
 
-        <!-- Map -->
 
-                <li class="nav-group open">
-                <a href="javascript:void(0);" data-target="#mautic_campaigns_root_child" data-toggle="submenu" data-parent=".nav" data-menu-link="mautic_campaigns_root" id="mautic_campaigns_root">
-                <span class="arrow pull-right text-right"></span>
-                <span class="icon pull-left fa fa-calculator"></span><span class="nav-item-name text pull-left">Map</span></a>
-                <ul class="nav-submenu open" id="mautic_campaigns_root_child">
-                  <li class="nav-group">
-                  <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/stages"><span class="nav-item-name text">Stages</span></a>
-                  </li>
-                  <li class="nav-group">
-                  <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/segments"><span class="nav-item-name text">Segments</span></a>
-                  </li>
-                <li class="first nav-group">
-                <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/forms"><span class="nav-item-name text">Forms</span></a>
-                </li>
-                <li class="last nav-group">
-                <a href="<?php echo '//'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>s/campaigns"><span class="nav-item-name text">Campaigns</span></a>
-                </li>
-
-                </ul>
-                </li>
 
 <!-- Calendar -->
         <li class="nav-group">
